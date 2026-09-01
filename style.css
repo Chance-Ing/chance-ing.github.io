@@ -367,13 +367,19 @@ a.project-card {
 
 .project-tech {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     list-style: none;
     font-family: var(--font-mono);
     font-size: 0.8rem;
-    color: var(--text-muted);
     flex-wrap: wrap;
     margin-top: auto;
+}
+
+.project-tech li {
+    background-color: rgba(100, 255, 218, 0.1);
+    color: var(--accent);
+    padding: 5px 12px;
+    border-radius: 20px;
 }
 
 /* Contact Section & Footer */
