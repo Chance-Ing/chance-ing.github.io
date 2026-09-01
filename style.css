@@ -200,16 +200,23 @@ h1, h2, h3 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
+a.project-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
 
 .project-card {
     background-color: var(--card-bg);
     padding: 30px;
     border-radius: 4px;
-    transition: transform 0.3s;
+    transition: transform 0.3s, border-color 0.3s;
+    border: 1px solid transparent;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
+    border-color: var(--accent);
 }
 
 .project-category {
