@@ -270,8 +270,8 @@ h1, h2, h3 {
 /* Skills Section */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
 }
 
 .skill-card {
@@ -279,6 +279,9 @@ h1, h2, h3 {
     padding: 30px;
     border-radius: 4px;
     border-top: 2px solid var(--accent);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .skill-icon {
@@ -295,6 +298,7 @@ h1, h2, h3 {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: auto;
 }
 
 .skill-tags span {
@@ -310,12 +314,14 @@ h1, h2, h3 {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 30px;
 }
+
 a.project-card {
     text-decoration: none;
     color: inherit;
     display: block;
+    height: 100%;
 }
 
 .project-card {
@@ -324,11 +330,20 @@ a.project-card {
     border-radius: 4px;
     transition: transform 0.3s, border-color 0.3s;
     border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
     border-color: var(--accent);
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .project-category {
@@ -347,6 +362,7 @@ a.project-card {
     color: var(--text-muted);
     margin-bottom: 20px;
     font-size: 0.95rem;
+    flex-grow: 1;
 }
 
 .project-tech {
@@ -356,6 +372,8 @@ a.project-card {
     font-family: var(--font-mono);
     font-size: 0.8rem;
     color: var(--text-muted);
+    flex-wrap: wrap;
+    margin-top: auto;
 }
 
 /* Contact Section & Footer */
